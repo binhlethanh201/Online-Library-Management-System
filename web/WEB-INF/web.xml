@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <filter>
+        <filter-name>AdminFilter</filter-name>
+        <filter-class>Filter.AdminFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AdminFilter</filter-name>
+         <url-pattern>/adminHome.jsp</url-pattern>
+        <url-pattern>/listUser</url-pattern>
+        <url-pattern>/bookList</url-pattern>
+        <url-pattern>/bookedit</url-pattern>
+        <url-pattern>/optionStatic.jsp</url-pattern>
+        <url-pattern>/option</url-pattern>
+        <url-pattern>/listCategory</url-pattern>
+        <url-pattern>/listPublisher</url-pattern>
+        <url-pattern>/publisherDetail</url-pattern>
+        <url-pattern>/StaticAccountCount</url-pattern>
+        <url-pattern>/StaticBook</url-pattern>
+        <url-pattern>/statusCounts</url-pattern>
+        <url-pattern>/userDetail</url-pattern>
+        <url-pattern>/userDetail.jsp</url-pattern>
+    </filter-mapping>
+    
+    <filter>
+        <filter-name>EmployeeFilter</filter-name>
+        <filter-class>Filter.EmployeeFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EmployeeFilter</filter-name>
+         <url-pattern>/borrowmanager.jsp</url-pattern>
+        <url-pattern>/checkCardExist.jsp</url-pattern>
+        <url-pattern>/checkusertocreate.jsp</url-pattern>
+        <url-pattern>/createCard.jsp</url-pattern>
+        <url-pattern>/createCardNoUser.jsp</url-pattern>
+        <url-pattern>/createborrow.jsp</url-pattern>
+        <url-pattern>/displayCardInfo.jsp</url-pattern>
+        <url-pattern>/userexist.jsp</url-pattern>
+        <url-pattern>/updateBorrow.jsp</url-pattern>
+        <url-pattern>/updateBookInfo.jsp</url-pattern>
+        <url-pattern>/checkCardExist</url-pattern>
+        <url-pattern>/createCard</url-pattern>
+        <url-pattern>/processCreate</url-pattern>
+        <url-pattern>/remove_Updatefore</url-pattern>
+        <url-pattern>/updateBookInfo</url-pattern>
+    </filter-mapping>
+</web-app>
